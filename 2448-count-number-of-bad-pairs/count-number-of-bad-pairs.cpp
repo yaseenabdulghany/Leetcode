@@ -7,7 +7,6 @@ public:
         for(int i=0; i<n; i++)
             freq[nums[i]-i]++;
         for(auto& [x, f]: freq){
-            if (f>1)
                 cnt-=f*(f-1LL)/2;
         }
         return cnt;
