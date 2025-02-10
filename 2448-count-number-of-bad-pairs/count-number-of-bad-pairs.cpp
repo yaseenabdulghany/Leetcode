@@ -3,7 +3,7 @@ public:
     long long countBadPairs(vector<int>& nums) {
         int n=nums.size();
         long long cnt=n*(n-1LL)/2;
-        unordered_map<int, int> freq;
+        map<int, int> freq;
         for(int i=0; i<n; i++)
             freq[nums[i]-i]++;
         for(auto& [x, f]: freq){
