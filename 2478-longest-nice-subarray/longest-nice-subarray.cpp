@@ -4,7 +4,7 @@ public:
         int s= 0;
         int t= 0;
 
-        int count = 0;
+        int count = 0 ;
         int bitwise = 0;
         while(t<nums.size()){
            while((bitwise & nums[t])!=0){
